@@ -1,19 +1,7 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,R:percent,Rmd
-    text_representation:
-      extension: .Rmd
-      format_name: rmarkdown
-      format_version: '1.2'
-      jupytext_version: 1.8.0
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
+title: "Week 1 Peer Review"
+output: html_document
 ---
-
-# Week 1 Exercise
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
