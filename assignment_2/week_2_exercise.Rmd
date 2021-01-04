@@ -13,6 +13,63 @@ jupyter:
     name: ir
 ---
 
-```{r}
+# Week 2 Exercise
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+suppressPackageStartupMessages(library(tidyverse))
+cces <- suppressMessages(drop_na(read_csv("cces_sample_coursera.csv")))
+```
+
+Your objective is to replicate these figures, created using the Cooperative
+Congressional Election Study data. These figures are similar to those we
+completed in the lecture videos.
+
+### Put your name here: Marcio Woitek
+
+## Exercise 1
+
+Hints:
+
+* For the x-axis, use the variable `ideo5`.
+* Make sure you recode the data for the `ideo5` variable to generate the
+  correct names for the x-axis. You will want to consult the codebook.
+* Use the fill aesthetic to have R fill in the bars. You do not need to set the
+  colors manually.
+* Use `guides()` to drop the legend.
+* Make sure the axis labels and figure title are correct.
+
+```{r exercise1, echo=FALSE}
+
+```
+
+## Exercise 2
+
+Hints:
+
+* For the x-axis, use the variable `pew_religimp`.
+* Make sure you recode the data for the `pew_religimp` variable to generate the
+  correct labels for the x-axis. You will want to consult the codebook.
+* Rename the column for ideology to make sure the first letter is upper-case
+  (to make the legend appear correctly).
+* Use the fill aesthetic to have R fill in the bars. You do not need to set the
+  colors manually.
+* Make sure the axis labels and figure title are correct.
+
+```{r exercise2, echo=FALSE}
+
+```
+
+## Exercise 3
+
+Instructions:
+
+* For this visualization, you are creating your own data for practice.
+* Create a tibble/data frame with three columns: Semester, Student, and Grade.
+* There should be six semesters and three students (Amanda, Betty, and Carol).
+* Create grades for the students using the `runif()` command, with values
+  between 80 and 100. Hint: you'll need 18 grades total.
+
+```{r exercise3, echo=FALSE}
 
 ```
