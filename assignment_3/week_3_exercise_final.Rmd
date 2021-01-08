@@ -1,20 +1,7 @@
 ---
-jupyter:
-  jupytext:
-    encoding: '# -*- coding: utf-8 -*-'
-    formats: ipynb,R:percent,Rmd
-    text_representation:
-      extension: .Rmd
-      format_name: rmarkdown
-      format_version: '1.2'
-      jupytext_version: 1.8.1
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
+title: "Week 3 Peer Review"
+output: html_document
 ---
-
-# Week 3 Exercise
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -210,12 +197,11 @@ data_plot_3[["Month"]] <- dplyr::recode(
 )
 
 # Print the tibble:
-data_plot_3
-# knitr::kable(
-#     data_plot_3,
-#     format = "html",
-#     table.attr = "style='width:25%;'"
-# ) %>% kableExtra::kable_styling()
+knitr::kable(
+    data_plot_3,
+    format = "html",
+    table.attr = "style='width:25%;'"
+) %>% kableExtra::kable_styling()
 ```
 
 **Put your figure here:**
@@ -284,13 +270,12 @@ y <- y_theor + noise
 data_plot_4 <- tibble::tibble("x" = x, "y_theor" = y_theor, "y" = y)
 
 # Print the tibble:
-data_plot_4
-# knitr::kable(
-#     data_plot_4,
-#     col.names = c("x", "y (Theoretical)", "y (with Noise)"),
-#     format = "html",
-#     table.attr = "style='width:40%;'"
-# ) %>% kableExtra::kable_styling()
+knitr::kable(
+    data_plot_4,
+    col.names = c("x", "y (Theoretical)", "y (with Noise)"),
+    format = "html",
+    table.attr = "style='width:40%;'"
+) %>% kableExtra::kable_styling()
 ```
 
 **Put your figure here:**
